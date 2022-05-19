@@ -80,7 +80,7 @@ function buildCharts(sample) {
     // // 8. Create the trace for the bar chart. 
     var barData = [{
       x: sample_values[0].slice(0,10).reverse(),
-      y: yticks[0], // incorrect tick labels rendering
+      y: yticks.map(id => `OTU ${id}`),
       text: otu_labels[0].reverse(),
       type: "bar",
       orientation: "h"
@@ -88,10 +88,6 @@ function buildCharts(sample) {
     // // 9. Create the layout for the bar chart. 
     var barLayout = {
      title: "Top 10 Bacteria Cultures Found",
-      yaxis: {
-        tickprefix: "OTU ",
-        showtickprefix: "all"
-      }
     };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
