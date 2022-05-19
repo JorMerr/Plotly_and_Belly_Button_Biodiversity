@@ -80,7 +80,7 @@ function buildCharts(sample) {
     // // 8. Create the trace for the bar chart. 
     var barData = [{
       x: sample_values[0].slice(0,10).reverse(),
-      y: yticks[0],
+      y: yticks[0], // incorrect tick labels rendering
       text: otu_labels[0].reverse(),
       type: "bar",
       orientation: "h"
