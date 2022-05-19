@@ -8,17 +8,17 @@ The `plots.js` file was updated to dynamically display a dashboard containing th
 ##### Bar Chart
 A bar chart of the Top 10 bacteria species found in a subject's belly button which would dynamically update when the Subject ID was changed from the dropdown menu.
 
-![Bar Chart](https://github.com/JorMerr/Plotly_and_Belly_Button_Biodiversity/blob/main/img/BarChart.PNG)
+![Bar Chart](https://github.com/JorMerr/Plotly_and_Belly_Button_Biodiversity/blob/main/static/img/BarChart.PNG)
 
 ##### Bubble Chart
 A bubble chart of all the bacteria species found in a subject's belly button, and the volume at which it was found which would dynamically update when the Subject ID was changed from the dropdown menu.
 
-![Bubble Chart](https://github.com/JorMerr/Plotly_and_Belly_Button_Biodiversity/blob/main/img/BubbleChart.PNG)
+![Bubble Chart](https://github.com/JorMerr/Plotly_and_Belly_Button_Biodiversity/blob/main/static/img/BubbleChart.PNG)
 
 ##### Gauge Chart
 A guage chart displaying the frequency with which the subject reposted to wash their belly button each week which would dynamically update when the Subject ID was changed from the dropdown menu.
 
-![Gauge Chart](https://github.com/JorMerr/Plotly_and_Belly_Button_Biodiversity/blob/main/img/GaugeChart.PNG)
+![Gauge Chart](https://github.com/JorMerr/Plotly_and_Belly_Button_Biodiversity/blob/main/static/img/GaugeChart.PNG)
 
 
 #### Additional Stylings
