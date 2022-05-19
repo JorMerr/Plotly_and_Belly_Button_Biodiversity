@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+## Plotly and Belly Button Biodiversity
 
-You can use the [editor on GitHub](https://github.com/JorMerr/Plotly_and_Belly_Button_Biodiversity/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+### Overview of Project
+The purpose of this project is to provide an interactive dashboard for study volunteers to review the Top 10 bacterial species found in their belly button. This dashboard will allow volunteers to quickly view whether their natural bacteria may be a candidate for Improbably Beef to manufacture synthetic beef.
+#### Steps of the Project
+The `plots.js` file was updated to dynamically display a dashboard containing the following features:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+##### Bar Chart
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+##### Bubble Chart
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+##### Gauge Chart
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JorMerr/Plotly_and_Belly_Button_Biodiversity/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+*This project created by Jordan Merritt as part of Carleton University's Business Data Analysis and Visualization Boot Camp.*
