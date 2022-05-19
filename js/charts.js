@@ -59,24 +59,22 @@ function buildCharts(sample) {
   d3.json("samples.json").then((data) => {
     // 3. Create a variable that holds the samples array. 
     var samplesArr = data.samples;
-
     // 4. Create a variable that filters the samples for the object with the desired sample number.
     var resultArray = samplesArr.filter(sampleObj => sampleObj.id == sample);
-    
     //  5. Create a variable that holds the first sample in the array.
     var result = resultArray[0];
-
     // 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
     var otu_ids = [result.otu_ids];
     var otu_labels = [result.otu_labels];
     var sample_values = [result.sample_values];
 
+
+
+    // || --------- BAR CHART --------- ||
     // 7. Create the yticks for the bar chart.
     // Hint: Get the the top 10 otu_ids and map them in descending order  
     //  so the otu_ids with the most bacteria are last. 
-
     var yticks = otu_ids[0].slice(0,10).reverse().map(x => x);
-
     // // 8. Create the trace for the bar chart. 
     var barData = [{
       x: sample_values[0].slice(0,10).reverse(),
@@ -91,5 +89,36 @@ function buildCharts(sample) {
     };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
+
+    // || --------- BUBBLE CHART --------- ||
+    // 1. Create the trace for the bubble chart.
+    var bubbleData = [{
+      x: otu_ids[0],
+      y: sample_values[0],
+      text: otu_labels[0],
+      mode: "markers",
+      marker: {
+        size: sample_values[0],
+        color: otu_ids[0]
+      }
+  }];
+  
+    // 2. Create the layout for the bubble chart.
+    var bubbleLayout = {
+      title: "Bacteria Culters Per Sample",
+      xaxis: {title: "OTU ID"},
+      margin: {
+        l: 100,
+        r: 100,
+        t: 100,
+        b: 100
+      },
+      hovermode: "closest"
+    };
+
+    // 3. Use Plotly to plot the data with the layout.
+    Plotly.newPlot("bubble", bubbleData, bubbleLayout); 
   });
 }
+
+
